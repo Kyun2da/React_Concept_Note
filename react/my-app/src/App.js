@@ -6,17 +6,26 @@ import ScrollBox from "./ScrollBox";
 import IterationSample from "./IterationSample";
 import Counter from "./Counter";
 import Info from "./Info";
+import RightPane from "./components/RightPane";
+import LeftPane from "./components/LeftPane";
+import { SampleProvider } from "./contexts/sample";
 function App() {
   return (
     <div className="App">
-      <EventPractice />
+      {/* <EventPractice />
       <EventPractice2 />
-      <ValidationSample />
+      <ValidationSample /> */}
       {/* <ScrollBox ref={ref => (this.scrollBox = ref)} />
       <button onClick={() => this.scrollBox.scrollToBottom()}>맨 밑으로</button> */}
-      <IterationSample />
+      {/* <IterationSample />
       <Counter />
-      <Info />
+      <Info /> */}
+      <SampleProvider>
+        <div className="panes">
+          <LeftPane />
+          <RightPane />
+        </div>
+      </SampleProvider>
     </div>
   );
 }
