@@ -1,13 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Clock from "./Clock";
 
-function App() {
+type AppProps = {
+  name: string;
+};
+
+function App({ name }: AppProps) {
   return (
     <div className="App">
       <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx2</code> and save to reload.
-        </p>
+        <h1>Hello, world!, {name}</h1>
+        <Clock />
       </header>
     </div>
   );
