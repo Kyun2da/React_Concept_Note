@@ -1,6 +1,6 @@
 import React from "react";
 import ColorBox from "./components/ColorBox";
-import { ColorProvider } from "./contexts/color";
+import { ColorProvider } from "./contexts/Color";
 import SelectColors from "./components/SelectColors";
 function App() {
   return (

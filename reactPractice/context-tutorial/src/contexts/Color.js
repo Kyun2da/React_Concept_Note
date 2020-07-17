@@ -4,8 +4,8 @@ const ColorContext = createContext({
   state: { color: "black", subcolor: "red" },
   actions: {
     setColor: () => {},
-    setSubcolor: () => {}
-  }
+    setSubColor: () => {},
+  },
 });
 
 const ColorProvider = ({ children }) => {
@@ -14,7 +14,7 @@ const ColorProvider = ({ children }) => {
 
   const value = {
     state: { color, subcolor },
-    actions: { setColor, setSubcolor }
+    actions: { setColor, setSubcolor },
   };
   return (
     <ColorContext.Provider value={value}>{children}</ColorContext.Provider>
@@ -23,4 +23,5 @@ const ColorProvider = ({ children }) => {
 
 const { Consumer: ColorConsumer } = ColorContext;
 export { ColorProvider, ColorConsumer };
+
 export default ColorContext;
