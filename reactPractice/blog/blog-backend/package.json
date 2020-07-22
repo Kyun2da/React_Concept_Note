@@ -4,17 +4,21 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "dotenv": "^8.2.0",
     "eslint-config-prettier": "^6.11.0",
+    "esm": "^3.2.25",
     "koa": "^2.13.0",
     "koa-bodyparser": "^4.3.0",
-    "koa-router": "^9.1.0"
+    "koa-router": "^9.1.0",
+    "mongoose": "^5.9.25"
   },
   "devDependencies": {
     "eslint": "^7.5.0",
     "nodemon": "^2.0.4"
   },
   "scripts": {
-    "start": "node src",
-    "start:dev": "nodemon --watch src/ src/index.js"
+    "start": "node -r esm src",
+    "start:dev": "nodemon --watch src/ -r esm src/index.js"
   }
 }
