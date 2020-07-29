@@ -1,2 +1,6 @@
-# Initial page
+---
+description: 리액트 개념정리를 하는 페이지 입니다.
+---
+
+# 리액트
 
