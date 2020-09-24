@@ -1,9 +1,13 @@
 import React from 'react';
-import './App.css';
+import InformationContainer from './components/InformationContainer';
+import SwitchContainer from './components/SwitchContainer';
 
 const App: React.FC = () => (
   <div className="App">
-    <div>a</div>
+    <div>
+      <SwitchContainer />
+      <InformationContainer />
+    </div>
   </div>
 );
 
