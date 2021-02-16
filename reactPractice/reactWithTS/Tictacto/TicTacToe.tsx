@@ -40,10 +40,6 @@ interface ClickCellAction {
   cell: number;
 }
 
-const clickCell = (row: number, cell: number): ClickCellAction => {
-  return { type: CLICK_CELL, row, cell };
-};
-
 interface ChangeTurnAction {
   type: typeof CHANGE_TURN;
 }
