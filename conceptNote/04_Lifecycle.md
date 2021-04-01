@@ -1,11 +1,5 @@
 # React의 Lifecycle
 
-![lifecycle](./img/lifecycle.jpeg)
-
-위 그림은 리액트 버전 16.3의 lifecycle이고 아래 그림은 16.4의 lifecycle이다
-
-![](./img/lifecycle2.jpeg)
-
 ### constructor
 
 ```react
